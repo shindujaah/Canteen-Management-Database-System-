@@ -2,8 +2,7 @@
 
 Case Study : Delish Enterprise Canteen Management Database System
 
-Database System Requirements
-
+**Database System Requirements**
 
 Delish is a medium-sized enterprise that operates two canteens on site for 24 hours a day. Both canteens serve the employees daily, about more than 200 people. One of the canteens is a halal canteen and the other one is a non-halal canteen. Each canteen has a set of stalls and individual storage. Currently, the canteens are storing all data in a manual way. For managers, it is difficult for them to view the orders, cash transaction of customers and stock availability. Therefore, the canteens need a new database system to improve the existing record-keeping system.
 Delish hires a special group of staff to manage the canteens (e.g., stall operator, cashier, cook, cleaner). Each canteen is assigned a unique identifier, name and location. Each employee is assigned to work at one canteen. When a new staff joins a canteen, the staff number, first name, last name, main contact phone number, email, hourly salary rate, title and hire date should be kept. Delish maintains a set of position title names with job descriptions. A position title will be assigned to a staff upon hire. For computation of the staff salary at the end of the month, the daily work record of each staff needs to be stored. A work record contains a serial number, staff information, clock-in date and time, clock-out date and time, number of minutes worked and work status (incomplete, complete or exception). When the staff clocks in at the beginning of a work day, the work status will be automatically assigned the status “incomplete”. The status is automatically updated to “complete” when the staff clocks out after 300 minutes (5 hours) of work. If the staff clocks out after less than 300 minutes, the work status is updated as “exception”.
@@ -14,10 +13,10 @@ To ensure sufficient supply of ingredients to all stalls, each canteen manages a
 
 
 
-Additional Requirements
+**Additional Requirements**
 
 The menu offers many types of cuisine such as Indian, Chinese, Western, Japanese and many others. For Indian cuisine, two additional details need to be displayed on the menu: 1) spice level and 2) vegetarian or non-vegetarian. Western cuisine comes with a meat option and at least one side (fries, coleslaw, salad, mashed potato or butter corn). Therefore, the meat weight in ounces (oz.) and the sides included in the menu item should also be stored. Each menu item is only classified into one cuisine type. Menu items other than Indian and Western cuisines have no additional details.  
 
-SQL Query
+**SQL Query**
 
 For each menu item, list the menu item name, total quantity of items sold and total menu item sales for non-popular menu items (total sales for a menu item below RM 500). Include only the customer orders from 01-JAN-2020 to 31-DEC-2020. Sort records by menu item name in descending order.
